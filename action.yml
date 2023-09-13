@@ -21,7 +21,7 @@ inputs:
     default: '--verbose'
 runs:
   using: 'docker'
-  image: ghcr.io/systemed/tilemaker:master
+  image: 'docker://ghcr.io/systemed/tilemaker:master'
   args:
     - --input=${{ inputs.input }}
     - --config=${{ inputs.config }}
